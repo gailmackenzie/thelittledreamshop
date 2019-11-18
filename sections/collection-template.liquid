@@ -46,15 +46,25 @@
 
 
       <div class="page-width">
-          Stuff Here
+          <div class="servicePricing">Starting from $349</div>
+          <div class="serviceDescription">
+              No logo? No problem. We can discuss your business and branding and come up with design solution you will love. Our logo design service includes, three early concept variations. When a logo is chosen, the next stage is to make necessary changes and provide 3 colour schemes, on both dark and light backgrounds.
+              Additional changes will increase cost.
+        </div>
+        <div class="primaryButton">Contact us for a Quote</div>
+
       </div>
 
-
+{% comment %}
       {% if is_filter_by_available == false and section.settings.sort_enable == false %}
         <div class="page-width">
           <span class="filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
         </div>
       {% endif %}
+
+      {% endcomment %}
+
+
       {% if collection.description != blank %}
         <div class="rte collection-description page-width">
           {{ collection.description }}
