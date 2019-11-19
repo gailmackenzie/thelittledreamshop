@@ -1,0 +1,35 @@
+
+<div class="page-width">
+  <h2 class="servicePricing">Starting from{{ section.settings.service-cost }}</h2>
+  <h3 class="serviceDescription">{{ section.settings.service-desc }}</h3>
+  <a href="{{ section.settings.contact-url }}" class="btn btn--primary btn--small">{{ section.settings.contact-url-text }}</a>
+</div>
+
+{% schema %}
+  {
+    "name": "Service Details",
+    "settings": [
+
+    {
+      "id": "service-cost",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    },
+
+    {
+      "id": "service-desc",
+      "type": "richtext",
+      "label": "Add custom text below",
+      "default": "<p>Add your text here</p>"
+    }
+
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
